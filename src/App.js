@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { Route } from 'react-router-dom';
 import './App.css';
+import DialogsPage from './components/Header/DialogPage/DialogPage';
+import Header from './components/Header/Header';
+import HomePage from './components/Header/HomePage/HomePage';
+import JobsPage from './components/Header/JobsPage/JobsPage';
+import MyNetworkPage from './components/Header/MyNetworkPage/MyNetworkPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div>
+        <Route path='/home' render={() => <HomePage />} />
+      </div>
+      <div>
+        <Route path='/mynetwork' render={() => <MyNetworkPage />} />
+      </div>
+      <div>
+        <Route path='/jobs' render={() => <JobsPage />} />
+      </div>
+      <div>
+        <Route path='/dialogs' render={() => <DialogsPage />} />
+      </div>
     </div>
   );
 }
