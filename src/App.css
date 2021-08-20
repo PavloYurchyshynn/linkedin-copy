@@ -1,4 +1,9 @@
 .App {
   text-align: center;
-  background-color: silver;
+  background-color: rgb(221, 221, 221);
+}
+
+.AppWrapper {
+  margin: 0 auto;
+  width: 1200px;
 }

@@ -6,12 +6,12 @@ import HomePage from './components/Header/HomePage/HomePage';
 import JobsPage from './components/Header/JobsPage/JobsPage';
 import MyNetworkPage from './components/Header/MyNetworkPage/MyNetworkPage';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Header />
-      <div>
-        <Route path='/home' render={() => <HomePage />} />
+      <div className='AppWrapper'>
+        <Route path='/home' render={() => <HomePage state={props.state}/>} />
       </div>
       <div>
         <Route path='/mynetwork' render={() => <MyNetworkPage />} />

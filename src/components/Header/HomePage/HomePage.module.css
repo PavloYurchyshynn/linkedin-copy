@@ -1,0 +1,20 @@
+.profilePage {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.profilePage > div {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 10px;
+    margin: 25px 15px;
+}
+
+.profileInfo > div {
+    padding: 30px 0;
+    border-bottom: 1px solid silver;
+}
+
+.userImg {
+    width: 70px;
+}
