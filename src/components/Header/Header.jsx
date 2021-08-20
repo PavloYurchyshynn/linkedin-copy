@@ -23,7 +23,6 @@ function Header() {
                 <div className={style.item}>
                     <NavLink to='/dialogs' activeClassName={style.active}>Messaging</NavLink>
                 </div>
-                
             </div>
         </div>
     );
