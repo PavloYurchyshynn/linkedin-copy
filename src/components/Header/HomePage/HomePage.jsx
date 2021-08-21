@@ -1,22 +1,14 @@
 import style from './HomePage.module.css'
+import ProfileFeed from './ProfileFeed/ProfileFeed';
+import ProfileInfo from './ProfileInfo/ProfileInfo';
+import ProfilePosts from './ProfilePosts/ProfilePosts';
 
 function HomePage(props) {
     return (
         <div className={style.profilePage}>
-            <div className={style.profileInfo}>
-               <div className={style.userImgDiv}><img src={props.state.homePage.profileInfo.userPhoto} className={style.userImg}/></div>
-               <div>{props.state.homePage.profileInfo.userName}</div>
-               <div>{props.state.homePage.profileInfo.userPosition}</div>
-               <div>Connections: {props.state.homePage.profileInfo.userConections}</div>
-               <div></div>
-               <div></div>
-            </div>
-            <div className={style.profilePosts}>
-
-            </div>
-            <div className={style.profileFeed}>
-
-            </div>
+            <ProfileInfo state={props.state}/>
+            <ProfilePosts state={props.state}/>
+            <ProfileFeed state={props.state}/>
         </div>
     );
 }

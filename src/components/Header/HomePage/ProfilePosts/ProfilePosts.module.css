@@ -1,0 +1,31 @@
+.profilePosts {
+    background-color: red;
+}
+
+.myPost {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-bottom: 1px solid silver;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.postInput {
+    height: 50px;
+    width: 90%;
+    border: 1px solid silver;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.userImg {
+    width: 70px;
+}
+
+.postList {
+    padding: 20px;
+    border-top: 1px solid silver;
+    border-radius: 10px;
+}

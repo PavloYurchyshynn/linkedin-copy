@@ -1,0 +1,8 @@
+.profileInfo > div {
+    padding: 30px 0;
+    border-bottom: 1px solid silver;
+}
+
+.userImg {
+    width: 70px;
+}
