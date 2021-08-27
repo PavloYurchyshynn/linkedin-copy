@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { connect } from 'react-redux'
 import Post from './Post/Post'
 import style from './ProfilePosts.module.css'
 
@@ -27,7 +28,7 @@ function ProfilePosts(props) {
         <div className={style.profilePosts}>
             <div className={style.myPost}>
                 <div>
-                    <img src={props.state.homePage.profileInfo.userPhoto} className={style.userImg} />
+                    <img src={props.userPhoto} className={style.userImg} />
                 </div>
                 <div>
                     <input
@@ -47,4 +48,8 @@ function ProfilePosts(props) {
     )
 }
 
-export default ProfilePosts
+let mapStateToProps = (state) => ({
+    userPhoto: state.homePage.profileInfo.userPhoto
+})
+
+export default connect(mapStateToProps)(ProfilePosts)

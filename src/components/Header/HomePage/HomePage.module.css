@@ -1,6 +1,6 @@
 .profilePage {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 20% 50% 30%;
 }
 
 .profilePage > div {
