@@ -1,11 +1,9 @@
 .profilePage {
     display: grid;
     grid-template-columns: 20% 50% 30%;
+    align-items: start;
 }
 
 .profilePage > div {
-    background-color: white;
-    border: 1px solid silver;
-    border-radius: 10px;
-    margin: 25px 15px;
+    margin: 50px 12px;
 }

@@ -11,16 +11,16 @@ function App(props) {
     <div className="App">
       <Header />
       <div className='AppWrapper'>
-        <Route path='/home' render={() => <HomePage state={props.state}/>} />
+        <Route path='/home' render={() => <HomePage/>} />
       </div>
       <div>
-        <Route path='/mynetwork' render={() => <MyNetworkPage />} />
+        <Route path='/mynetwork' render={() => <MyNetworkPage state={props.state}/>} />
       </div>
       <div>
-        <Route path='/jobs' render={() => <JobsPage />} />
+        <Route path='/jobs' render={() => <JobsPage state={props.state}/>} />
       </div>
       <div>
-        <Route path='/dialogs' render={() => <DialogsPage />} />
+        <Route path='/dialogs' render={() => <DialogsPage state={props.state}/>} />
       </div>
     </div>
   );

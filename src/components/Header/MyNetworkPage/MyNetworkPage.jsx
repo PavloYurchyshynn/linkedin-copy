@@ -1,7 +1,12 @@
-function MyNetworkPage() {
+import NetworkList from "./NetworkList/NetworkList";
+import NetworkManage from "./NetworkManage/NetworkManage";
+import style from './MyNetworkPage.module.css'
+
+function MyNetworkPage(props) {
     return (
-        <div>
-            MyNetwork
+        <div className={style.myNetwork}>
+            <NetworkManage state={props.state}/>
+            <NetworkList />
         </div>
     );
 }

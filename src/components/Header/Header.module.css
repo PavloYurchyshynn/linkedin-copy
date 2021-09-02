@@ -36,6 +36,10 @@
     text-decoration: none;
     margin-left: 5px;
 }
+
+.item img {
+    width: 20px;
+}
   
 .item a.active {
     font-weight: bold;

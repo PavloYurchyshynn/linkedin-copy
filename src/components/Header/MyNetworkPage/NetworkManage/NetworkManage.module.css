@@ -1,0 +1,32 @@
+.networkManage {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+}
+
+.text {
+    text-align: left;
+    padding: 0 15px;
+}
+
+.item {
+    color: rgb(117, 117, 117);
+    padding: 8px;
+    text-align: left;
+    display: flex;
+}
+
+.item img{
+    width: 20px;
+    margin: 0 15px;
+}
+
+.userConections {
+    float: right;
+}
+
+.item:hover {
+    background-color: rgb(220, 220, 200);
+}

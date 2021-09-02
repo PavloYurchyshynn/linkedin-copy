@@ -1,0 +1,55 @@
+.card {
+    border: 1px solid silver;
+    border-radius: 10px;
+    margin: 5px;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.backgroundPhoto {
+    width: 100%;
+    height: 25%;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cardInfo {
+    position: relative;
+    margin: 10px;
+}
+
+.cardInfo h1 {
+    font-size: 16px;
+}
+
+.cardInfo p {
+    color: rgb(117, 117, 117);
+}
+
+.photo {
+    width: 65%;
+    height: 65%;
+}
+
+.followBtn {
+    font-weight: bold;
+    margin-top: 10px;
+    color: blue;
+    background-color: white;
+    width: 90%;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 15px;
+}
+
+.followBtn:hover {
+    cursor: pointer;
+    border: 2px solid blue;
+    background-color: rgb(175, 209, 248);
+}

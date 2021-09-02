@@ -1,0 +1,30 @@
+.invitations {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.networkLogos {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.networkList {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.smallCards {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    align-items: start;
+}

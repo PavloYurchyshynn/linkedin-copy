@@ -6,9 +6,9 @@ import ProfilePosts from './ProfilePosts/ProfilePosts';
 function HomePage(props) {
     return (
         <div className={style.profilePage}>
-            <ProfileInfo state={props.state}/>
-            <ProfilePosts state={props.state}/>
-            <ProfileRecommendations state={props.state}/>
+            <ProfileInfo/>
+            <ProfilePosts/>
+            <ProfileRecommendations/>
         </div>
     );
 }
