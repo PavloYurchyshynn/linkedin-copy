@@ -1,0 +1,31 @@
+.jobsNav {
+    position: sticky;
+    top: 20px;
+}
+
+.jobsNav > div{
+    border: 1px solid silver;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.items {
+    padding: 20px 0;
+    margin-bottom: 15px;
+}
+
+.item {
+    margin: 25px 0;
+    text-align: left;
+    display: flex;
+    color: rgb(117, 117, 117);
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item img{
+    width: 20px;
+    margin: 0 15px;
+}

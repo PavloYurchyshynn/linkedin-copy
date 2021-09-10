@@ -23,10 +23,13 @@
     margin: 0 15px;
 }
 
-.userConections {
-    float: right;
+.userConnections {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .item:hover {
     background-color: rgb(220, 220, 200);
+    cursor: pointer;
 }

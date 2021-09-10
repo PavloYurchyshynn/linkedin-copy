@@ -1,0 +1,32 @@
+.jobsHelp {
+    border: 1px solid silver;
+    border-radius: 10px;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.jobsHelp img {
+    width: 40%;
+}
+
+.jobsHelp h1 {
+    font-size: 18px;
+}
+
+.btn {
+    font-weight: bold;
+    color: blue;
+    background-color: white;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    width: 30%;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px solid blue;
+    background-color: rgb(175, 209, 248);
+}

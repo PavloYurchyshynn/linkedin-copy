@@ -1,4 +1,4 @@
-import { connect, connectAdvanced } from 'react-redux';
+import { connect } from 'react-redux';
 import PageCard from './PageCard/PageCard';
 import UserCard from './UserCard/UserCard';
 import style from './NetworkList.module.css'

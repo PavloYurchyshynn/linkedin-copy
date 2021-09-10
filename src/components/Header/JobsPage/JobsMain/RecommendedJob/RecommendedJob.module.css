@@ -1,0 +1,47 @@
+.item {
+    display: grid;
+    grid-template-columns: 15% 80% 5%;
+    padding: 10px 0;
+    border-bottom: 1px solid silver;
+    color: rgb(117, 117, 117);
+}
+
+.item:hover .jobName{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.item:last-of-type {
+    border-bottom: none;
+}
+
+.jobName {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(85, 85, 255);
+    padding: 5px 0;
+}
+
+.applicant {
+    padding: 5px 0;
+    color: green;
+    font-weight: bold;
+}
+
+.jobLogo img {
+    width: 60px;
+    height: 60px;
+}
+
+.jobInfo {
+    text-align: left;
+    padding: 5px;
+}
+
+.saveStatus img {
+    width: 20px;
+}
+
+.saveStatus img:hover {
+    cursor: pointer;
+}

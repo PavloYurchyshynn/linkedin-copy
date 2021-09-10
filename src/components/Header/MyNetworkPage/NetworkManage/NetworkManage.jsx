@@ -7,8 +7,10 @@ function NetworkManage(props) {
             <p className={style.text}>Manage my network</p>
             <div className={style.item}>
                 <img src="https://image.flaticon.com/icons/png/512/880/880594.png" />
-                Connections
-                <div className={style.userConections}>{props.userConections}</div>
+                <div className={style.userConnections}>
+                    <div>Connections</div>
+                    <div>{props.userConections}</div>
+                </div>
             </div>
             <div className={style.item}>
                 <img src="https://image.flaticon.com/icons/png/512/1250/1250592.png" />
