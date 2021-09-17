@@ -48,8 +48,4 @@ function ProfilePosts(props) {
     )
 }
 
-let mapStateToProps = (state) => ({
-    userPhoto: state.homePage.profileInfo.userPhoto
-})
-
-export default connect(mapStateToProps)(ProfilePosts)
+export default ProfilePosts

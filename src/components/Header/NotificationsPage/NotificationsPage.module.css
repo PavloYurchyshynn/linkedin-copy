@@ -1,0 +1,12 @@
+.notifications {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    align-items: start;
+}
+
+.notifications > div {
+    margin: 50px 12px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    background-color: white;
+}

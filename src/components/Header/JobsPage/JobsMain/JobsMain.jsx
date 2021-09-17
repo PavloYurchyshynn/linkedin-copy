@@ -1,5 +1,3 @@
-import { connect } from "react-redux";
-import { notSave, save } from "../../../../redux/jobs-reducer";
 import style from "./JobsMain.module.css"
 import RecommendedJob from "./RecommendedJob/RecommendedJob";
 
@@ -20,13 +18,4 @@ function JobsMain(props) {
     );
 }
 
-let mapStateToProps = (state) => ({
-    recommendedJobs: state.jobsPage.recommendedJobs,
-})
-
-export default connect(mapStateToProps,
-    {
-        save,
-        notSave,
-    }
-)(JobsMain);
+export default JobsMain

@@ -1,5 +1,3 @@
-import { connect } from 'react-redux'
-import { follow, unfollow } from '../../../../redux/home-reducer'
 import style from './ProfileRecommendations.module.css'
 import RecUser from './RecUser/RecUser'
 
@@ -17,14 +15,4 @@ function ProfileRecommendations(props) {
     )
 }
 
-let mapStateToProps = (state) => ({
-    users: state.homePage.users
-})
-
-
-export default connect(mapStateToProps,
-    {
-        follow,
-        unfollow,
-    }
-)(ProfileRecommendations)
+export default ProfileRecommendations

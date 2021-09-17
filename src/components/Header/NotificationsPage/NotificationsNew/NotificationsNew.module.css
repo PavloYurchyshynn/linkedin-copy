@@ -1,0 +1,13 @@
+.notificationsNew {
+    padding: 10px;
+    position: sticky;
+    top: 24px;
+}
+
+.notificationsNew h1 {
+    font-size: 16px;
+}
+
+.notificationsNew p {
+    color: rgb(117, 117, 117);
+}

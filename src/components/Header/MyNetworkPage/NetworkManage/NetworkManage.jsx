@@ -1,4 +1,3 @@
-import { connect } from 'react-redux';
 import style from './NetworkManage.module.css'
 
 function NetworkManage(props) {
@@ -44,8 +43,4 @@ function NetworkManage(props) {
     );
 }
 
-let mapStateToProps = (state) => ({
-    userConections: state.homePage.profileInfo.userConections,
-})
-
-export default connect(mapStateToProps)(NetworkManage);
+export default NetworkManage

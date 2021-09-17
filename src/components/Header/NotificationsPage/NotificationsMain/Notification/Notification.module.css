@@ -1,0 +1,25 @@
+.notification {
+    padding: 20px;
+    display: flex;
+    border-bottom: 1px solid silver;
+}
+
+.notification:last-of-type {
+    border-bottom: none;
+}
+
+.notification img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+.text {
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.text:hover {
+    cursor: pointer;
+}

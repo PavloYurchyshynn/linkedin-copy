@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 30% 70%;
     align-items: start;
-    margin: 0 60px;
 }
 
 .myNetwork > div {

@@ -1,8 +1,6 @@
-import { connect } from 'react-redux';
 import PageCard from './PageCard/PageCard';
 import UserCard from './UserCard/UserCard';
 import style from './NetworkList.module.css'
-import { connectUser, disconnectUser, followPage, unfollowPage } from '../../../../redux/network-reducer';
 
 function NetworkList(props) {
 
@@ -38,16 +36,4 @@ function NetworkList(props) {
     );
 }
 
-let mapStateToProps = (state) => ({
-    networkPages: state.networkPage.networkPages,
-    networkUsers: state.networkPage.networkUsers,
-})
-
-export default connect(mapStateToProps,
-    {
-        followPage,
-        unfollowPage,
-        connectUser,
-        disconnectUser,
-    }
-)(NetworkList);
+export default NetworkList

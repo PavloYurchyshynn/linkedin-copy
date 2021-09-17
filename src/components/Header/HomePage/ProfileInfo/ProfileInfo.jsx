@@ -21,11 +21,4 @@ function ProfileInfo(props) {
     )
 }
 
-let mapStateToProps = (state) => ({
-    userPhoto: state.homePage.profileInfo.userPhoto,
-    userName: state.homePage.profileInfo.userName,
-    userPosition: state.homePage.profileInfo.userPosition,
-    userConections: state.homePage.profileInfo.userConections,
-})
-
-export default connect(mapStateToProps)(ProfileInfo)
+export default ProfileInfo

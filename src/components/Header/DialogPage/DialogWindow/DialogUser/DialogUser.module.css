@@ -1,0 +1,14 @@
+.dialog {
+    border-bottom: 1px solid silver;
+    border-right: 1px solid silver;
+    padding: 30px 10px;
+}
+
+.dialog:last-of-type {
+    border-bottom: none;
+}
+
+.dialog a {
+    text-decoration: none;
+    color: black;
+}

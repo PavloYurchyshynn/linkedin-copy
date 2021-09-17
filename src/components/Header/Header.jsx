@@ -14,25 +14,31 @@ function Header() {
                 <div className={style.item}>
                     <NavLink to='/home' activeClassName={style.active}>
                         <img src="https://image.flaticon.com/icons/png/512/25/25694.png" />
-                        Home
+                        <div>Home</div>
                     </NavLink>
                 </div>
                 <div className={style.item}>
                     <NavLink to='/mynetwork' activeClassName={style.active}>
                         <img src="https://image.flaticon.com/icons/png/512/681/681494.png" />
-                        MyNetwork
+                        <div>MyNetwork</div>
                     </NavLink>
                 </div>
                 <div className={style.item}>
                     <NavLink to='/jobs' activeClassName={style.active}>
                         <img src="https://image.flaticon.com/icons/png/512/2910/2910791.png" />
-                        Jobs
+                        <div>Jobs</div>
                     </NavLink>
                 </div>
                 <div className={style.item}>
                     <NavLink to='/dialogs' activeClassName={style.active}>
                         <img src="https://image.flaticon.com/icons/png/512/134/134718.png" />
-                        Messaging
+                        <div>Messaging</div>
+                    </NavLink>
+                </div>
+                <div className={style.item}>
+                    <NavLink to='/notifications' activeClassName={style.active}>
+                        <img src="https://image.flaticon.com/icons/png/512/3602/3602123.png" />
+                        <div>Notifications</div>
                     </NavLink>
                 </div>
             </div>

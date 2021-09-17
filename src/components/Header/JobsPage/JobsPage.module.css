@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 25% 45% 30%;
     align-items: start;
-    margin: 0 60px;
 }
 
 .jobs > div {
