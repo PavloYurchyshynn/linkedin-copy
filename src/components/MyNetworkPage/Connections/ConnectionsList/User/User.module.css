@@ -1,0 +1,35 @@
+.user {
+    padding: 10px 20px;
+    display: flex;
+    border-bottom: 1px solid silver;
+}
+
+.user:last-of-type {
+    border-bottom: none;
+}
+
+.user img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.user:hover {
+    cursor: pointer;
+}
+
+.info {
+    text-align: left;
+    font-size: 14px;
+    color: rgb(117, 117, 117);
+}
+
+.info h1 {
+    font-size: 16px;
+    color: black;
+}
+
+.info h1:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,73 @@
+.profileInfo {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+}
+
+.profileInfo > div {
+    padding: 10px;
+    border-bottom: 1px solid silver;
+}
+
+.profileInfo > div:last-of-type {
+    border-bottom: none;
+}
+
+.profileInfo h1 {
+    font-size: 16px;
+    color: black;
+}
+
+.profileInfo a {
+    text-decoration: none;
+}
+
+.profileInfo a:hover {
+    text-decoration: underline;
+}
+
+.profileInfo h2 {
+    font-size: 12px;
+    text-align: left;
+}
+
+.profileInfo p {
+    font-size: 12px;
+}
+
+.connections {
+    text-align: left;
+    font-size: 12px;
+}
+
+.connections a {
+    color: black;
+}
+
+.connections a:hover {
+    text-decoration: none;
+}
+
+.connections div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connections:hover {
+    background-color: rgb(220, 220, 200);
+    cursor: pointer;
+}
+
+.network {
+    font-weight: bold;
+}
+
+.userConections {
+    color: blue;
+}
+
+.userImg {
+    width: 70px;
+}

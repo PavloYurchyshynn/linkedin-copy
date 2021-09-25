@@ -1,0 +1,6 @@
+.text {
+    font-weight: bold;
+    border-bottom: 1px solid silver;
+    padding: 10px;
+    text-align: left;
+}

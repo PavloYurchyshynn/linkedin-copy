@@ -1,5 +1,4 @@
 let initialState = {
-    jobAdvertisement: 'https://media-exp1.licdn.com/dms/image/C4D22AQHl2DmZdNREqw/feedshare-shrink_2048_1536/0/1587055561625?e=1633564800&v=beta&t=GabjF2uxXIv7Cpk43VcARAyY4ZP8yrGhsFM4Do5UpNg',
     notifications: [
         {
             id: 1,

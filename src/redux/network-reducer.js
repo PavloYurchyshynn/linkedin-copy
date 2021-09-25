@@ -144,6 +144,44 @@ let initialState = {
             connectStatus: false,
         },
     ],
+    connections: [
+        {
+            id: 1,
+            photo: 'https://cdnimg.rg.ru/img/content/177/18/63/1000s_d_850.jpg',
+            name: 'Artem Koshevoi',
+            status: 'Front-end developer(React, React Native)',
+        },
+        {
+            id: 1,
+            photo: 'https://cdnimg.rg.ru/img/content/177/18/63/1000s_d_850.jpg',
+            name: 'Artem Koshevoi',
+            status: 'Front-end developer(React, React Native)',
+        },
+        {
+            id: 1,
+            photo: 'https://cdnimg.rg.ru/img/content/177/18/63/1000s_d_850.jpg',
+            name: 'Artem Koshevoi',
+            status: 'Front-end developer(React, React Native)',
+        },
+        {
+            id: 1,
+            photo: 'https://cdnimg.rg.ru/img/content/177/18/63/1000s_d_850.jpg',
+            name: 'Artem Koshevoi',
+            status: 'Front-end developer(React, React Native)',
+        },
+        {
+            id: 1,
+            photo: 'https://cdnimg.rg.ru/img/content/177/18/63/1000s_d_850.jpg',
+            name: 'Artem Koshevoi',
+            status: 'Front-end developer(React, React Native)',
+        },
+        {
+            id: 1,
+            photo: 'https://cdnimg.rg.ru/img/content/177/18/63/1000s_d_850.jpg',
+            name: 'Artem Koshevoi',
+            status: 'Front-end developer(React, React Native)',
+        },
+    ],
 }
 
 const networkReducer = (state = initialState, action) => {

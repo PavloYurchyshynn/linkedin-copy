@@ -1,0 +1,11 @@
+.connections {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: start;
+}
+.connections > div {
+    margin: 50px 12px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    background-color: white;
+} 
