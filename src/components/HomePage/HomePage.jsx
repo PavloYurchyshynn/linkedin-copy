@@ -7,18 +7,16 @@ function HomePage(props) {
     return (
         <div className={style.profilePage}>
             <ProfileInfo
-                userPhoto={props.userPhoto}
-                userName={props.userName}
-                userPosition={props.userPosition}
+                profileInfo={props.profileInfo}
                 connections={props.connections}
             />
             <ProfilePosts
-                userPhoto={props.userPhoto}
+                profileInfo={props.profileInfo}
             />
             <ProfileRecommendations
                 follow={props.follow}
                 unfollow={props.unfollow}
-                users={props.users}
+                recommendedUsers={props.recommendedUsers}
             />
         </div>
     );

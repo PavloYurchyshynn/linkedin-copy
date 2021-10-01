@@ -3,7 +3,7 @@ import RecUser from './RecUser/RecUser'
 
 function ProfileRecommendations(props) {
 
-    let recUsers = props.users
+    let recUsers = props.recommendedUsers
 
     let userElement = recUsers.map(u => <RecUser user={u} follow={props.follow} unfollow={props.unfollow} />)
 

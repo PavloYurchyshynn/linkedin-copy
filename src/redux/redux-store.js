@@ -4,6 +4,7 @@ import jobsReducer from "./jobs-reducer";
 import messageReducer from "./message-reducer";
 import networkReducer from "./network-reducer";
 import notificationsReducer from "./notifications-reducer";
+import userReducer from "./user-reducer";
 
 let reducers = combineReducers({
     homePage: homeReducer,
@@ -11,6 +12,7 @@ let reducers = combineReducers({
     jobsPage: jobsReducer,
     notificationPage: notificationsReducer,
     dialogPage: messageReducer,
+    profilePage: userReducer
 })
 
 let store = createStore(reducers);

@@ -3,7 +3,7 @@ import Connections from "./Connections";
 
 const mapStateToProps = (state) => {
     return {
-        connections: state.networkPage.connections,
+        connections: state.profilePage.connections,
     }
 }
 

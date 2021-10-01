@@ -14,7 +14,6 @@ function RecUser(props) {
                     }
                 </div>
             </div>
-
         </div>
     )
 }

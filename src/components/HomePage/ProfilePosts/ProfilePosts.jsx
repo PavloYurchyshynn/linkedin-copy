@@ -28,7 +28,7 @@ function ProfilePosts(props) {
         <div className={style.profilePosts}>
             <div className={style.myPost}>
                 <div>
-                    <img src={props.userPhoto} className={style.userImg} />
+                    <img src={props.profileInfo.userPhoto} className={style.userImg} />
                 </div>
                 <div>
                     <input

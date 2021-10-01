@@ -1,14 +1,12 @@
 import { connect } from 'react-redux';
-import { follow, unfollow } from '../../redux/home-reducer';
+import { follow, unfollow } from '../../redux/user-reducer';
 import HomePage from './HomePage'
 
 const mapStateToProps = (state) => {
     return {
-        users: state.homePage.users,
-        userPhoto: state.homePage.profileInfo.userPhoto,
-        userName: state.homePage.profileInfo.userName,
-        userPosition: state.homePage.profileInfo.userPosition,
-        connections: state.networkPage.connections,
+        connections: state.profilePage.connections,
+        recommendedUsers: state.profilePage.recommendedUsers,
+        profileInfo: state.homePage.profileInfo,
     }
 }
 

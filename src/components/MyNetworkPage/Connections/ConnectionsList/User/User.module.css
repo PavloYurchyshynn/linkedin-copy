@@ -4,6 +4,11 @@
     border-bottom: 1px solid silver;
 }
 
+.link {
+    display: flex;
+    text-decoration: none;
+}
+
 .user:last-of-type {
     border-bottom: none;
 }
@@ -28,6 +33,7 @@
 .info h1 {
     font-size: 16px;
     color: black;
+   
 }
 
 .info h1:hover {

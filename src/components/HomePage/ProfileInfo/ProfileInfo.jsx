@@ -4,12 +4,13 @@ import style from './ProfileInfo.module.css'
 function ProfileInfo(props) {
     return (
         <div className={style.profileInfo}>
-            <div>
+            <div className={style.profile}>
+                <img src={props.profileInfo.userBackground} className={style.userBackground}/>
                 <NavLink to='/home/user'>
-                    <img src={props.userPhoto} className={style.userImg} />
-                    <h1>{props.userName}</h1>
+                    <img src={props.profileInfo.userPhoto} className={style.userImg} />
+                    <h1>{props.profileInfo.userName}</h1>
                 </NavLink>
-                <p>{props.userPosition}</p>
+                <p>{props.profileInfo.userPosition}</p>
             </div>
             <div className={style.connections}>
                 <NavLink to='/mynetwork'>

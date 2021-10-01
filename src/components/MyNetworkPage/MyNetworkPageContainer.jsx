@@ -4,9 +4,9 @@ import MyNetworkPage from './MyNetworkPage'
 
 const mapStateToProps = (state) => {
     return {
-        connections: state.networkPage.connections,
         networkPages: state.networkPage.networkPages,
         networkUsers: state.networkPage.networkUsers,
+        connections: state.profilePage.connections,
     }
 }
 

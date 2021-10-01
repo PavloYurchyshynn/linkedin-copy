@@ -1,0 +1,20 @@
+.profileSide {
+    margin: 50px 12px;
+}
+
+.profileSide > div {
+    border-radius: 10px;
+    border: 1px solid silver;
+    background-color: white;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.viewedUsers {
+    padding: 10px;
+}
+
+.viewedUsers h1 {
+    font-size: 16px;
+    text-align: left;
+}
