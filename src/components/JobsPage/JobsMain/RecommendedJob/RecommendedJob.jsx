@@ -4,7 +4,7 @@ function RecommendedJob(props) {
     return (
         <div className={style.item}>
             <div className={style.jobLogo}>
-                <img src={props.job.jobJogo} />
+                <img src={props.job.jobLogo} />
             </div>
             <div className={style.jobInfo}>
                 <div className={style.jobName}>{props.job.jobName}</div>

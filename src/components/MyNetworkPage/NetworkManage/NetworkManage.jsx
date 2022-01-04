@@ -10,7 +10,7 @@ function NetworkManage(props) {
                     <img src="https://image.flaticon.com/icons/png/512/880/880594.png" />
                     <div className={style.userConnections}>
                         <div>Connections</div>
-                        <div>{props.connections.length}</div>
+                        <div>{props.connections.length - 1}</div>
                     </div>
                 </div>
             </NavLink>

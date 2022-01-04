@@ -1,10 +1,11 @@
-import { combineReducers, createStore } from "redux";
+import { applyMiddleware, combineReducers, createStore } from "redux";
 import homeReducer from "./home-reducer";
 import jobsReducer from "./jobs-reducer";
 import messageReducer from "./message-reducer";
 import networkReducer from "./network-reducer";
 import notificationsReducer from "./notifications-reducer";
 import userReducer from "./user-reducer";
+import thunkMiddleware from "redux-thunk"
 
 let reducers = combineReducers({
     homePage: homeReducer,
@@ -15,6 +16,6 @@ let reducers = combineReducers({
     profilePage: userReducer
 })
 
-let store = createStore(reducers);
+let store = createStore(reducers, applyMiddleware(thunkMiddleware));
 
 export default store

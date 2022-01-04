@@ -2,7 +2,6 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import Profile from './Profile'
 import { compose } from 'redux';
-import { setUserProfile } from '../../../redux/user-reducer';
 
 const mapStateToProps = (state) => {
     return {
@@ -10,6 +9,7 @@ const mapStateToProps = (state) => {
         connections: state.profilePage.connections,
     }
 }
+
 export default compose(
     connect(mapStateToProps),
     withRouter,

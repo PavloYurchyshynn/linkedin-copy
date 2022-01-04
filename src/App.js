@@ -19,7 +19,7 @@ function App(props) {
         <Route exact path='/mynetwork' render={() => <MyNetworkPageContainer />} />
         <Route path='/mynetwork/connections' render={() => <ConnectionsContainer />} />
         <Route path='/jobs' render={() => <JobsPageContainer />} />
-        <Route path='/dialogs' render={() => <DialogPageContainer />} />
+        <Route path='/dialogs/:dialogId?' render={() => <DialogPageContainer />} />
         <Route path='/notifications' render={() => <NotificationsPageContainer />} />
         <Redirect from='/' to='/home' />
       </div>

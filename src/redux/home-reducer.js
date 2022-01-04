@@ -1,22 +1,32 @@
+import { profileAPI } from '../api/api'
 import userPhoto from '../images/user.png'
 
+const SET_PROFILE = 'SET_PROFILE'
+
 let initialState = {
-    profileInfo: {
-        id: 1,
-        userBackground: 'https://s3.amazonaws.com/thumbnails.venngage.com/template/10d4dd8e-178e-44c0-b848-e7189399231a.png',
-        userPhoto: userPhoto,
-        userName: 'Pavlo Yurchyshyn',
-        userPosition: 'Trainee-junior React.js developer',
-        userLocation: 'Ivano-Frankivsk, Ukraine',
-    }
+    profileInfo: {},
+    mainProfile: 1
 }
 
 const homeReducer = (state = initialState, action) => {
     switch (action.type) {
-
+        case SET_PROFILE: {
+            return { ...state, profileInfo: action.profileInfo }
+        }
         default: {
             return state
         }
+    }
+}
+
+export const setProfile = (profileInfo) => ({ type: SET_PROFILE, profileInfo })
+
+export const getProfile = (profileId) => {
+
+    return (dispatch) => {
+        profileAPI.getProfile(profileId).then(data => {
+            dispatch(setProfile(data))
+        })
     }
 }
 

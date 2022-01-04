@@ -5,7 +5,9 @@ function ConnectionsList(props) {
 
     let users = props.connections;
 
-    let connectionsElement = users.map(e => <User user={e}/>)
+    let connectionsElement = users.map(e => <User user={e} />)
+
+    connectionsElement.splice(0,1)
 
     return (
         <div className={style.connectionsList}>

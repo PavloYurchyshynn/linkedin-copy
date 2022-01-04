@@ -2,6 +2,7 @@ import Notification from './Notification/Notification';
 import style from './NotificationsMain.module.css'
 
 function NotificationsMain(props) {
+    
     let notifications = props.notifications;
 
     let notificationsElement = notifications.map(e => <Notification notification={e} photo={props.photo}/>)

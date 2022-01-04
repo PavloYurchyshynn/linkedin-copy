@@ -1,4 +1,6 @@
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
+import { compose } from 'redux';
 import DialogPage from './DialogPage'
 
 const mapStateToProps = (state) => {
@@ -8,6 +10,7 @@ const mapStateToProps = (state) => {
     }
 }
 
-const DialogPageContainer = connect(mapStateToProps)(DialogPage)
-
-export default DialogPageContainer;
+export default compose(
+    connect(mapStateToProps),
+    withRouter,
+)(DialogPage)

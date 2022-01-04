@@ -1,48 +1,30 @@
+import { notificationsAPI } from "../api/api"
+
+const SET_NOTIFICATIONS = 'SET_NOTIFICATIONS'
+
 let initialState = {
-    notifications: [
-        {
-            id: 1,
-            photo: 'https://image.flaticon.com/icons/png/512/1632/1632670.png',
-            text: 'Do you have the back-to-work jitters? These tips may help you get reacquainted with your colleagues.',
-        },
-        {
-            id: 2,
-            photo: 'https://image.flaticon.com/icons/png/512/3050/3050452.png',
-            text: '2 people viewed your profile',
-        },
-        {
-            id: 3,
-            photo: 'https://image.flaticon.com/icons/png/512/1632/1632670.png',
-            text: 'DAILY RUNDOWN: MONDAY Shipping needs drop dead date; Has tech left the building for good?; and other top news for you',
-        },
-        {
-            id: 4,
-            photo: 'https://image.flaticon.com/icons/png/512/1632/1632670.png',
-            text: 'Does a part-time job develop or distract students? Join the debate.',
-        },
-        {
-            id: 5,
-            photo: 'https://image.flaticon.com/icons/png/512/1632/1632670.png',
-            text: `Why it's vital to include short breaks during the working day.`,
-        },
-        {
-            id: 6,
-            photo: 'https://image.flaticon.com/icons/png/512/1632/1632670.png',
-            text: 'Writing down your long-term plan is the first step to making it a reality. This author explains why.',
-        },
-        {
-            id: 7,
-            photo: 'https://image.flaticon.com/icons/png/512/1632/1632670.png',
-            text: 'DAILY RUNDOWN: SATURDAY Workers want purpose, not perks; Career ladders are so passé; and other top news for you',
-        },
-    ]
+    notifications: []
 }
 
 const notificationsReducer = (state = initialState, action) => {
     switch (action.type) {
+        case SET_NOTIFICATIONS: {
+            return { ...state, notifications: action.notifications }
+        }
         default: {
             return state
         }
+    }
+}
+
+export const setNotifications = (notifications) => ({ type: SET_NOTIFICATIONS, notifications })
+
+export const getNotifications = () => {
+
+    return (dispatch) => {
+        notificationsAPI.getNotifications().then(data => {
+            dispatch(setNotifications(data))
+        })
     }
 }
 

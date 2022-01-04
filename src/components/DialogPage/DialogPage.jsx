@@ -5,7 +5,11 @@ import JobAdvertisement from "../JobAdvertisement/JobAdvertisement";
 function DialogPage(props) {
     return (
         <div className={style.dialogPage}>
-            <DialogWindow dialogUsers={props.dialogUsers} messages={props.messages}/>
+            <DialogWindow
+                dialogUsers={props.dialogUsers}
+                messages={props.messages}
+                diaolgId={props.match.params.dialogId}
+            />
             <JobAdvertisement />
         </div>
     );

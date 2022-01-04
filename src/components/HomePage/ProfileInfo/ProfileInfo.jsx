@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import style from './ProfileInfo.module.css'
 
 function ProfileInfo(props) {
+
     return (
         <div className={style.profileInfo}>
             <div className={style.profile}>
@@ -15,7 +16,7 @@ function ProfileInfo(props) {
             <div className={style.connections}>
                 <NavLink to='/mynetwork'>
                     <div>
-                        <span>Connections:</span> <span className={style.userConections}>{props.connections.length}</span>
+                        <span>Connections:</span> <span className={style.userConections}>{props.connections.length - 1}</span>
                     </div>
                     <div className={style.network}>Grow your network</div>
                 </NavLink>
