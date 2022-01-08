@@ -4,6 +4,7 @@ import { getProfile } from '../../redux/home-reducer';
 import { getConnections, getRecommendedUsers, getViewedProfileUsers } from '../../redux/user-reducer';
 import { getNotifications } from '../../redux/notifications-reducer';
 import { getJobs } from '../../redux/jobs-reducer';
+import { getDialogUsers } from '../../redux/message-reducer';
 import { getNetworkPages, getNetworkUsers } from '../../redux/network-reducer';
 import HomePage from './HomePage'
 
@@ -28,6 +29,7 @@ const HomePageContainer = connect(mapStateToProps,
         getViewedProfileUsers,
         getNetworkPages,
         getNetworkUsers,
+        getDialogUsers,
     }
 )(HomePage)
 

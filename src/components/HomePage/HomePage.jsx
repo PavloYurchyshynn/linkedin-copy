@@ -15,6 +15,7 @@ function HomePage(props) {
         props.getViewedProfileUsers()
         props.getNetworkPages()
         props.getNetworkUsers()
+        props.getDialogUsers()
     }, [])
     
     return (

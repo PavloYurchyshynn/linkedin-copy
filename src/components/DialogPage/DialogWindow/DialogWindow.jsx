@@ -1,25 +1,43 @@
 import style from './DialogWindow.module.css'
-import { NavLink, Route } from 'react-router-dom'
+import DialogUser from './DialogUser/DialogUser';
+import { useEffect } from 'react';
+import DialogMessage from './DialogMessage/DialogMessage';
 
 function DialogWindow(props) {
 
-    let diaolgId = props.diaolgId;
-    if (!diaolgId) {
-        diaolgId = 1;
+    let dialogId = props.dialogId;
+    if (!dialogId) {
+        dialogId = 1;
     }
-    let dialogUsers = props.dialogUsers;
-    let userMessages = props.messages;
 
-    let dialogElement = dialogUsers.map(e => <NavLink to={`/dialogs/${e.id}`}>{e.name}</NavLink>)
-    let messageElement = userMessages.map(e => e.id === diaolgId ? <div>{e.message}</div> : <div>asdsad</div>)
+    useEffect(() => {
+        props.getMessages(dialogId)
+    }, [dialogId])
+
+    let message = props.message;
+    let messagesElement = message.map(e => <DialogMessage e={e} />)
+    let dialogUsers = props.dialogUsers;
+    let dialogElement = dialogUsers.map(e => <DialogUser user={e} />)
 
     return (
         <div className={style.dialogWindow}>
-            <div>
-                {dialogElement}
+            <div className={style.dialogUsers}>
+                <div className={style.dialogHeading}>
+                    Messaging
+                    <img src='https://cdn-icons-png.flaticon.com/512/1159/1159633.png' />
+                </div>
+                <div>
+                    {dialogElement}
+                </div>
             </div>
-            <div>
-                <Route path={`/dialogs/${diaolgId}`} render={() => <div>{messageElement}</div>} />
+            <div className={style.messages}>
+                <div>
+                    {messagesElement}
+                    <input
+                        type="text"
+                        placeholder='Write a message...'
+                    />
+                </div>
             </div>
         </div>
     );

@@ -1,36 +1,45 @@
+import { dialogsAPI } from "../api/api"
+
+const SET_DIALOG_USERS = 'SET_DIALOG_USERS'
+const SET_MESSAGE = 'SET_MESSAGE'
+
 let initialState = {
-    dialogUsers: [
-        {
-            id: 1,
-            photo: 'https://www.g20.org/wp-content/uploads/2021/01/people.jpg',
-            name: 'Diane from LinkedIn Premium',
-        },
-        {
-            id: 2,
-            photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKX9ClIfHI7kdTOFYmEgKuEQ9GdyjjORLm2Q&usqp=CAU',
-            name: 'Victoria Patsulya',
-        },
-        {
-            id: 3,
-            photo: 'https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2017/03/28/Local-Politics/Images/Supreme_Court_Gorsuch_Moments_22084-70c71-0668.jpg?t=20170517',
-            name: 'Oleh Matsevych',
-        },
-    ],
-    messages: [
-        { id: 1, name: 'Diane from LinkedIn Premium', message: `Hello` },
-        { id: 1, name: 'Diane from LinkedIn Premium', message: `I'd like to offer you a free trial of LinkedIn Premium.` },
-        { id: 2, name: 'Victoria Patsulya', message: `Hello` },
-        { id: 2, name: 'Victoria Patsulya', message: `How are you` },
-        { id: 2, name: 'Victoria Patsulya', message: `?` },
-        { id: 3, name: 'Oleh Matsevych', message: `Bruh` },
-    ]
+    dialogUsers: [],
+    message: []
 }
 
 const messageReducer = (state = initialState, action) => {
     switch (action.type) {
+        case SET_DIALOG_USERS: {
+            return { ...state, dialogUsers: action.dialogUsers }
+        }
+        case SET_MESSAGE: {
+            return { ...state, message: action.message }
+        }
         default: {
             return state
         }
+    }
+}
+
+export const setDialogUsers = (dialogUsers) => ({ type: SET_DIALOG_USERS, dialogUsers })
+export const setMessages = (message) => ({ type: SET_MESSAGE, message })
+
+export const getDialogUsers = () => {
+
+    return (dispatch) => {
+        dialogsAPI.getDialogUsers().then(data => {
+            dispatch(setDialogUsers(data))
+        })
+    }
+}
+
+export const getMessages = (id) => {
+
+    return (dispatch) => {
+        dialogsAPI.getMessages(id).then(data => {
+            dispatch(setMessages(data.messages))
+        })
     }
 }
 

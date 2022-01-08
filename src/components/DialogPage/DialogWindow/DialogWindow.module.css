@@ -2,3 +2,41 @@
     display: grid;
     grid-template-columns: 40% 60%;
 }
+
+.dialogUsers {
+    border-right: 1px solid silver;
+}
+
+.dialogHeading {
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+}
+
+.dialogHeading img {
+    width: 20px;
+    height: 20px;
+}
+
+.dialogHeading img:hover {
+    cursor: pointer;
+}
+
+.messages {
+    padding: 20px 10px;
+    position: relative;
+}
+
+.messages input{
+    outline: none;
+    border: none;
+    border-top: 1px solid silver;
+    border-radius: 0 0 10px 0;
+    width: 99%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

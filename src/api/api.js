@@ -2,7 +2,7 @@ import axios from "axios";
 
 const instance = axios.create({
     withCredentials: true,
-    baseURL: 'https://linkedin-copy.herokuapp.com/api/'
+    baseURL: 'http://localhost:8000/'
 })
 
 export const usersAPI = {
@@ -62,6 +62,21 @@ export const notificationsAPI = {
 export const jobsAPI = {
     getJobs() {
         return instance.get('recommendedJobs')
+            .then(response => {
+                return response.data
+            })
+    },
+}
+
+export const dialogsAPI = {
+    getDialogUsers() {
+        return instance.get('dialogUsers')
+            .then(response => {
+                return response.data
+            })
+    },
+    getMessages(id) {
+        return instance.get(`dialogUsers/${id}`)
             .then(response => {
                 return response.data
             })

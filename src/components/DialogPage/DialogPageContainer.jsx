@@ -1,16 +1,17 @@
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 import { compose } from 'redux';
+import { getMessages } from '../../redux/message-reducer';
 import DialogPage from './DialogPage'
 
 const mapStateToProps = (state) => {
     return {
         dialogUsers: state.dialogPage.dialogUsers,
-        messages: state.dialogPage.messages,
+        message: state.dialogPage.message,
     }
 }
 
 export default compose(
-    connect(mapStateToProps),
-    withRouter,
+    connect(mapStateToProps, { getMessages }),
+    withRouter
 )(DialogPage)
