@@ -2,7 +2,7 @@ import axios from "axios";
 
 const instance = axios.create({
     withCredentials: true,
-    baseURL: 'https://linkedin-copy.herokuapp.com/api'
+    baseURL: 'https://localhost:8000/'
 })
 
 export const usersAPI = {
