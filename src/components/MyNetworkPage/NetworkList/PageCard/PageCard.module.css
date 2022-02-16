@@ -39,7 +39,6 @@
 
 .followBtn {
     font-weight: bold;
-    margin-top: 10px;
     color: blue;
     background-color: white;
     width: 90%;
@@ -52,4 +51,10 @@
     cursor: pointer;
     border: 2px solid blue;
     background-color: rgb(175, 209, 248);
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .cardInfo h1, p {
+        font-size: 14px;
+    }
 }

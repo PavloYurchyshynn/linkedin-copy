@@ -29,3 +29,9 @@
     width: 20px;
     margin: 0 15px;
 }
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .item {
+        font-size: 14px;
+    }
+}

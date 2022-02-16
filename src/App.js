@@ -21,7 +21,7 @@ function App(props) {
         <Route path='/jobs' render={() => <JobsPageContainer />} />
         <Route path='/dialogs/:dialogId?' render={() => <DialogPageContainer />} />
         <Route path='/notifications' render={() => <NotificationsPageContainer />} />
-        <Redirect from='/' to='/home' />
+        <Redirect exact from='/' to='/home' />
       </div>
     </div>
   );

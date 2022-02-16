@@ -1,8 +1,9 @@
 import JobPhoto from '../../images/JobAdvertisement.jpg'
+import s from './JobAdvertisement.module.css'
 
 function JobAdvertisement(props) {
     return (
-        <div style={{ fontSize: "0"}}>
+        <div className={s.photo}>
             <img src={JobPhoto}/>
         </div>
     );

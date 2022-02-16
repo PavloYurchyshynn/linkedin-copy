@@ -1,0 +1,13 @@
+.photo {
+   font-size: 0; 
+}
+
+.photo img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1500px) {
+    .photo img {
+        border-radius: 10px;
+    }
+}
