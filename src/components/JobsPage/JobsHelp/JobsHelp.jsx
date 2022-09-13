@@ -1,10 +1,11 @@
 import style from "./JobsHelp.module.css"
+import manWork from '../../../images/icons/man-work.png'
 
 function JobsHelp() {
     return (
         <div className={style.jobsHelp}>
             <p>Recommended Newsletter</p>
-            <img src="https://img4.cliparto.com/pic/xl/231269/7016849-diagram-report-man-working-with-computer.jpg" />
+            <img src={manWork} />
             <h1>
                 Looking for a new job? Here’s some help
             </h1>

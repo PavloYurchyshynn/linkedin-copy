@@ -1,4 +1,6 @@
 import style from './RecommendedJob.module.css'
+import saveblack from '../../../../images/icons/save-black.png'
+import savewhite from '../../../../images/icons/save-white.png'
 
 function RecommendedJob(props) {
     return (
@@ -15,9 +17,9 @@ function RecommendedJob(props) {
             </div>
             <div className={style.saveStatus}>
                 {props.job.saveStatus
-                    ? <img src="https://image.flaticon.com/icons/png/512/1159/1159823.png"
+                    ? <img src={saveblack}
                         onClick={() => { props.notSave(props.job.id) }} />
-                    : <img src="https://image.flaticon.com/icons/png/512/1159/1159580.png"
+                    : <img src={savewhite}
                         onClick={() => { props.save(props.job.id) }} />}
             </div>
         </div>

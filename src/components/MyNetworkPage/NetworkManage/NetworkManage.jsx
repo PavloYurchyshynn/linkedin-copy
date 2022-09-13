@@ -1,5 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import style from './NetworkManage.module.css'
+import connections from '../../../images/icons/network.png'
+import contacts from '../../../images/icons/contacts.png'
+import people from '../../../images/icons/people.png'
+import groups from '../../../images/icons/groups.png'
+import events from '../../../images/icons/events.png'
+import page from '../../../images/icons/pages.png'
+import newsletters from '../../../images/icons/newsletters.png'
+import hashtag from '../../../images/icons/hashtag.png'
 
 function NetworkManage(props) {
     return (
@@ -7,7 +15,7 @@ function NetworkManage(props) {
             <p className={style.text}>Manage my network</p>
             <NavLink to='/mynetwork/connections'>
                 <div className={style.item}>
-                    <img src="https://image.flaticon.com/icons/png/512/880/880594.png" />
+                    <img src={connections} />
                     <div className={style.userConnections}>
                         <div>Connections</div>
                         <div>{props.connections.length - 1}</div>
@@ -15,31 +23,31 @@ function NetworkManage(props) {
                 </div>
             </NavLink>
             <div className={style.item}>
-                <img src="https://image.flaticon.com/icons/png/512/1250/1250592.png" />
+                <img src={contacts} />
                 Contacts
             </div>
             <div className={style.item}>
-                <img src="https://image.flaticon.com/icons/png/512/456/456283.png" />
+                <img src={people} />
                 People | Follow
             </div>
             <div className={style.item}>
-                <img src="https://image.flaticon.com/icons/png/512/634/634013.png" />
+                <img src={groups} />
                 Groups
             </div>
             <div className={style.item}>
-                <img src="https://image.flaticon.com/icons/png/512/1356/1356635.png" />
+                <img src={events} />
                 Events
             </div>
             <div className={style.item}>
-                <img src="https://image.flaticon.com/icons/png/512/1250/1250680.png" />
+                <img src={page} />
                 Page
             </div>
             <div className={style.item}>
-                <img src="https://image.flaticon.com/icons/png/512/2235/2235649.png" />
+                <img src={newsletters} />
                 Newsletters
             </div>
             <div className={style.item}>
-                <img src="https://image.flaticon.com/icons/png/512/1/1533.png" />
+                <img src={hashtag} />
                 Hashtags
             </div>
         </div>
