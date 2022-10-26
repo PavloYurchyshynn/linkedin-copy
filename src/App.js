@@ -9,19 +9,19 @@ import ConnectionsContainer from './components/MyNetworkPage/Connections/Connect
 import MyNetworkPageContainer from './components/MyNetworkPage/MyNetworkPageContainer';
 import NotificationsPageContainer from './components/NotificationsPage/NotificationsPageContainer';
 
-function App(props) {
+function App() {
   return (
     <div className="App">
       <Header />
-      <div className='AppWrapper'>
-        <Route exact path='/home' render={() => <HomePageContainer />} />
-        <Route path='/home/user/:userId?' render={() => <ProfileContainer />} />
-        <Route exact path='/mynetwork' render={() => <MyNetworkPageContainer />} />
-        <Route path='/mynetwork/connections' render={() => <ConnectionsContainer />} />
-        <Route path='/jobs' render={() => <JobsPageContainer />} />
-        <Route path='/dialogs/:dialogId?' render={() => <DialogPageContainer />} />
-        <Route path='/notifications' render={() => <NotificationsPageContainer />} />
-        <Redirect exact from='/' to='/home' />
+      <div className="AppWrapper">
+        <Route exact path="/home" render={() => <HomePageContainer />} />
+        <Route path="/home/user/:userId?" render={() => <ProfileContainer />} />
+        <Route exact path="/mynetwork" render={() => <MyNetworkPageContainer />} />
+        <Route path="/mynetwork/connections" render={() => <ConnectionsContainer />} />
+        <Route path="/jobs" render={() => <JobsPageContainer />} />
+        <Route path="/dialogs/:dialogId?" render={() => <DialogPageContainer />} />
+        <Route path="/notifications" render={() => <NotificationsPageContainer />} />
+        <Redirect exact from="/" to="/home" />
       </div>
     </div>
   );

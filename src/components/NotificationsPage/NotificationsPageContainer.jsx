@@ -1,12 +1,12 @@
 import { connect } from 'react-redux';
-import NotificationsPage from './NotificationsPage'
+import NotificationsPage from './NotificationsPage';
 
 const mapStateToProps = (state) => {
-    return {
-        notifications: state.notificationPage.notifications,
-    }
-}
+  return {
+    notifications: state.notificationPage.notifications
+  };
+};
 
-const NotificationsPageContainer = connect(mapStateToProps)(NotificationsPage)
+const NotificationsPageContainer = connect(mapStateToProps)(NotificationsPage);
 
 export default NotificationsPageContainer;

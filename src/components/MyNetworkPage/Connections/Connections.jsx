@@ -1,16 +1,15 @@
 import JobAdvertisement from '../../JobAdvertisement/JobAdvertisement';
-import style from './Connections.module.css'
+import style from './Connections.module.css';
 import ConnectionsList from './ConnectionsList/ConnectionsList';
-import React, { useEffect } from 'react'
+import React from 'react';
 
 function Connections(props) {
-
-    return (
-        <div className={style.connections}>
-            <ConnectionsList connections={props.connections} getConnections={props.getConnections}/>
-            <JobAdvertisement />
-        </div>
-    );
+  return (
+    <div className={style.connections}>
+      <ConnectionsList connections={props.connections} getConnections={props.getConnections} />
+      <JobAdvertisement />
+    </div>
+  );
 }
 
 export default Connections;
