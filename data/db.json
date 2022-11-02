@@ -90,7 +90,7 @@
     "networkPages": [
         {
             "id": 1,
-            "backgroundPhoto": "https://netology.ru/blog/wp-content/uploads/2016/11/FirstExampleBlur.png",
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
             "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png",
             "name": "JavaScript Developer",
             "followers": 205531,
@@ -98,7 +98,7 @@
         },
         {
             "id": 2,
-            "backgroundPhoto": "https://netology.ru/blog/wp-content/uploads/2016/11/FirstExampleBlur.png",
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
             "photo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAtFBMVEUQFjD///8AACUAAAAAABj//v+7vcIMES0PGDiTl5uChY/w7/JtcHsAAAYAAB8AABuwsrsQFTIQFi4AACIABigQFiyipa1XW2oAAAwKES0AACAAABQAACcPFDLx9PUADCqGio8bIThgZXF2eYdQU2VlZ3ja29ofIj2Qk5zKzc85PEtDQ1X///ovNkza2t/m5OkoLEOsrrq/xMkqM0aWmaW0uLpESmI1OEtGSVerq68sNE2OkpUE76poAAAESklEQVR4nO3cf1eiShzH8YFRu0kCM4hJOLJpe6tdU+t2t9p9/s9rx1+I5eDhoOLX83ntX04cTu8FYRCMMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICSBJNy3+sMxb7XWIYU/BDsqrvWhO30nT3rO/1vp5Mo/7EOoVGrOix1gUIUorBy68K6VS/p1AutUdkNl0k8ycLSgVknWWg1u245np3+N51m4VXZeYjkJ74NUbiTbKGwCigsAoXVQGERKKwGCotAYTVQWAQKq4HCIlBYDRQWgcJqoJBFth0EN4Hd3r0uaoVCKdn2+O2gednpXA7v3NiNJBM59+ipFcrQa31v9NMfW/927uMklOZGWoVS9FoPmbyFxx+x3rKmddEqDOM7R4+NRtbirtnqvpLPzW9IOoVShII3P2+/JefW1m/GrduRUKFirY4hUG/LnwH5Qia8ofF+ok68jbYfbAgVJk+z19sT9egb+cKQjxebazQ/wEwaH/7LJF3MmZqONXQK7UFmi/lTHrtezKe+NT+sjmPjwZROYfdxcXKY7abXrcX5T0bd974eeebmZxnJFEZs+R7Umd89KedvOiGl3XOsIZcsNK2LTGGwPhW+8OyyiXhy89ZFptBrpDOY92Rz6Sh3XWQKubMq7PPNhfMuLBihQm+9k8Yqu6zMmXXPf06iULLoNh3peIXWRaUweUtHmjeF1kWlsH2XjgyLfXJDpvA6M1LoewU0CvXpcD1nu+oV+i4GlcL2+Rdm99KzLEze18fScyyUKvovHXl11c4VZBApFCxJR/zzPOOzVvpE+pif4V6qxeN0qGe8FtyGTKH7bK2u8ZuB3msX1/iMKdm22er1NmQK7at0yOEylMt5jZTB1UPm9VdkClk3HbJ8vjyahkp1dflL68K8LjqFtf9XQ3WrwYP5dX7icn82Mmmb5zl0CtX6jKh31Ne3Gufuj87quv+nZ7rBRqeQeR/p4OLGU/ZLW9bAI18oWM1ZB9U3ImcfM/5KqBduXOd/NaG/DTX7fePLduvtpyc6XdNniqQKmf3kfEmcv/7gxtk4rUKWdJ+tT9tRb8PJdWxeF7FCwWLhf9qI4yFvm6c01Aq1qNYafIyXD2T0Xy5/czv3epFeoVCq57a6vfvp9L7H4yCRLPezN3qFUkqh9LVEpO28acEoFiopM3/bRUq1o5FeYVEorAYKizjtQn3tULpQdDcLpdL/pPnZjeP8OalV4ahuDWp2OTefvo8/m/7YQRCYlg+C/OcC9luoPf65LOehs1moT6FB3jofXt+OkHjQv08jMnd5tnrOfXrl9AsF21VY8EEBFKLwTAvVAQrrq8KdR5rOEY40kfj6idMeLOc0+YV1q3OEqY9iB+jThbPdT+7cS49xtlDBsHkAT7NTecgumJ/rLtn5C+5ByanadulcxXW9HEcJBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHP3F145arEIpEgAAAAAAElFTkSuQmCC",
             "name": "Codecademy",
             "followers": 863234,
@@ -106,7 +106,7 @@
         },
         {
             "id": 3,
-            "backgroundPhoto": "https://netology.ru/blog/wp-content/uploads/2016/11/FirstExampleBlur.png",
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
             "photo": "https://www.accenture.com/t20200701T040724Z__w__/us-en/_acnmedia/Accenture/Redesign-Assets/DotCom/Images/Global/Hero/12/Accenture-Logo-768x768.jpg",
             "name": "Accenture",
             "followers": 23635,
@@ -114,7 +114,7 @@
         },
         {
             "id": 4,
-            "backgroundPhoto": "https://netology.ru/blog/wp-content/uploads/2016/11/FirstExampleBlur.png",
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
             "photo": "https://yt3.ggpht.com/ytc/AKedOLQWB_fHwSUdJYXuRls9scEQgxsWGEHn_2Ts5Wex=s900-c-k-c0x00ffffff-no-rj",
             "name": "Bobocode",
             "followers": 977544,
@@ -122,7 +122,7 @@
         },
         {
             "id": 5,
-            "backgroundPhoto": "https://netology.ru/blog/wp-content/uploads/2016/11/FirstExampleBlur.png",
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
             "photo": "https://s.dou.ua/CACHE/images/img/static/companies/avatar_2wodIRR/c3bd5cf307810b39d33b26c1f4c18ae7.jpg",
             "name": "DataRobot",
             "followers": 236342,
@@ -130,7 +130,7 @@
         },
         {
             "id": 6,
-            "backgroundPhoto": "https://netology.ru/blog/wp-content/uploads/2016/11/FirstExampleBlur.png",
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
             "photo": "https://media-exp1.licdn.com/dms/image/C4D0BAQHMgChE6Dqr8w/company-logo_200_200/0/1576952473753?e=2159024400&v=beta&t=QXXWTaam5uRVOlIOKezXYBzcWj5SGn0HKMK7Lw5JlEA",
             "name": "Stanley X | DeepHow",
             "followers": 437896,
@@ -138,7 +138,7 @@
         },
         {
             "id": 7,
-            "backgroundPhoto": "https://netology.ru/blog/wp-content/uploads/2016/11/FirstExampleBlur.png",
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
             "photo": "https://seekvectorlogo.com/wp-content/uploads/2017/12/oracle-vector-logo-small.png",
             "name": "Oracle",
             "followers": 123456,
@@ -146,7 +146,7 @@
         },
         {
             "id": 8,
-            "backgroundPhoto": "https://netology.ru/blog/wp-content/uploads/2016/11/FirstExampleBlur.png",
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
             "photo": "data:image/png;base64,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",
             "name": "GeeksforGeeks",
             "followers": 86453,
