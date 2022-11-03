@@ -1,19 +1,405 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "connections": [
+        {
+            "id": 1,
+            "userBackground": "https://s3.amazonaws.com/thumbnails.venngage.com/template/10d4dd8e-178e-44c0-b848-e7189399231a.png",
+            "userPhoto": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+            "userName": "Pavlo Yurchyshyn",
+            "userPosition": "Trainee-junior React.js developer",
+            "userLocation": "Ivano-Frankivsk, Ukraine"
+        },
+        {
+            "id": 2,
+            "userBackground": "https://s3.amazonaws.com/thumbnails.venngage.com/template/10d4dd8e-178e-44c0-b848-e7189399231a.png",
+            "userPhoto": "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1112624532.1639094400",
+            "userName": "Pavlo Voloshyn",
+            "userPosition": "Full Stack Developer",
+            "userLocation": "Ivano-Frankivsk, Ukraine"
+        },
+        {
+            "id": 3,
+            "userBackground": "https://s3.amazonaws.com/thumbnails.venngage.com/template/10d4dd8e-178e-44c0-b848-e7189399231a.png",
+            "userPhoto": "https://i.guim.co.uk/img/media/33c508e9f0c30a90df363e3b5cc3925f0b70f5b6/0_0_3600_2159/master/3600.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=6c1e047f1edc4a54f1770458201ed69e",
+            "userName": "Vitaliy Kravets",
+            "userPosition": "Junior React Developer at Software Service & Innovation",
+            "userLocation": "Lviv"
+        },
+        {
+            "id": 4,
+            "userBackground": "https://s3.amazonaws.com/thumbnails.venngage.com/template/10d4dd8e-178e-44c0-b848-e7189399231a.png",
+            "userPhoto": "https://media.istockphoto.com/photos/portrait-of-casual-smiling-man-picture-id1138562953?k=20&m=1138562953&s=612x612&w=0&h=lNhjf4BqFckYRzz5H-CsqWs4cpoPvatzTkjGJTcdm8M=",
+            "userName": "Yurii Seredyuk",
+            "userPosition": "React Developer at Stubbs",
+            "userLocation": "Ukraine"
+        },
+        {
+            "id": 5,
+            "userBackground": "https://s3.amazonaws.com/thumbnails.venngage.com/template/10d4dd8e-178e-44c0-b848-e7189399231a.png",
+            "userPhoto": "https://static.toiimg.com/photo/83890825/83890825.jpg?v=3",
+            "userName": "Orest Pashkevych",
+            "userPosition": "Full Stack Engineer at Lvivity",
+            "userLocation": "Lviv"
+        }
+    ],
+    "recommendedUsers": [
+        {
+            "id": 1,
+            "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISEhgVEhIYGRgYGBgYGBgYGBIYGBgSGBgZGRgYGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QGhISGjEhISExNDQ0NDQ0NDQ0NDQ0NDQ0NDE0NDQ0MTQ0MTQ0NDE0MTQ0NDQ0NDQ0NDQ/NDQ0MTQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAABAgAGAwUHBAj/xAA+EAACAQIEAwUEBwcEAwEAAAAAAQIDEQQFEiExQVEGImFxgTKRobEHExRCgsHwIzNScrLR4WKSovEkNdIW/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAeEQEBAQEAAwEAAwAAAAAAAAAAARECITFBEgNRYf/aAAwDAQACEQMRAD8A3yGQEMkRoyGQEMioKGQEMgIhkKh0AUMKMgCgoiCgCgoAUUMMhEx0EEKAggQZAGAhCBAgSBQEIQNgIFAQUACEIBXUMhUOjLRkMhUEqGQyAgoAoZCoZAMgoCDcAuVjUYntJhqc9DcnLmoqLt577epqO3Ga1KNPRTlpc3Zy56fDpwObwxUI7yUpu+ybtFW5u6dyWrI6zDPpVFenB25bqV/Jxun7zU5lmTV1OtPVyUHBtei/Mobzqs5bzaXTVa/rv+uRsMDjm33pzab9iN7O/Bd1Ru/FmbaskbaGbVOEp17de/H3NSsZqWdYim7061S3OM/2i9G7pfAkaSdn9nitttbcqm/C0Wm/1xMWJm6S/aTjB8Un3pJcePGPoTWsbzDdr6kF+1ipcL2g4+t02rehZcrzqhiF+zmm+ceaOWRxcZt2lPhfa8k/wyaS4HpjOmkpxlGE1we+q/U1OqzeY64hjnmRdsKkZqNeSnBtLV3Yyj47R38ti/4atGpFSi00+DRqXWbMZQoAUVECQgBIREAg1gBQEsEJAK0h0Ih0RTIKAgoB0RAQUAyCgIYAo1+b5rTw0NU35R5v0GzXMYYem5y4/dXV9Dmma5jVxFTXN247LlHmk+hLcJNeLtDmFSvUc22ot3jGS2Su9kjSfVRveUm/Dur/AKNvWw7nayfm/wDJ4sRlc0r6WY1v8nwqw8Jb05NbbfW018bXsWPB5jhlaMJOn1UZvVvxvOMHJ+jKZKko+3fySfxdxoy2tFP/AIq3pexR0bDY2hbTRVr7uS9pvqpSfHxYMTg6Kjqnoh1k5qU3fnqts/LbxKRhYzk93UXipQ3+BYcvy2m2nVjWfg3B+r71yeF8sc8Ip92i9r3u1Ubfjd8fO5inl8KaadVSl0t/ksajQs4qcIL+FtQfrqu/iaXNYadqaTT5xalf8W9wNVGEU7KW724v4Fp7F53LDVPqqu9Ob2lfaEntfye1/eVJ4KrfW5QXOznaT9LD0arTtJ/rwaZZcZrvITQdks3jiqCs+9C0JbpttLZ8TfnRgQgQUBAoAQhggCBCEIFVtDIRDoimQyFQUAyCgBQDILYEaztDilTw897SktMVxbk+iAp/abMvrquzvGG0bLfo2urZgw2W1Kkt1aO3r09TBQpx1xXHntzb538vyLpg6EVGKSsjla68xgwfZ9JJvjzNl/8Anac1ZxNxh4bI2OHgjONuf5h2Lpu7sU7NezUqfsx2+fS53eVBPka/HZRCaacRJTx9fPsqc6b2jvx53suL2NhgM5r03za6OeIj8YsvubdlrS1Qjw4W5Mr88kqRfdTXkhafk8MRTxKUZU8Tdpfu8RUmr8/bu7ErZfRpR2pzh1c4yv4XepXfoJWwOLjHuzmvJyRpKsa8XpqTn5vv/wBVxqfnGfGUaMrr6yS6Nq+/n/lmuhRUXdSvvtsjbU8tVSO84uS5p003Hk9LtKz6q6NXi6E6bcbXXr/3c1KzYuP0e41QxGj+NOL3fFLUtvT4nTkcP7OV5U6kJptWlG11vfUlY7hE6cudFBIRGmRIAIQUMAIEIQhVVpDIRDIyp0FCXGQDoZGMdAMil9ssa3VhBP2Vf1l19Ey53OR5/mOutUlHnKS8bcPkTpY9uSpVKup79C+4SPA572Yffv8AryOh5e72OVdeVgw0Nj20keTDvY9tNkbeiCMriYomVM1EseerhlLl8jyyyuD5fA2cR7FTcahZTC3D4GjzrstTqR7q34lzEnElhOnFcx7LVad9Kut/77FbxOX1ota4+Cv05K59CYjBxlyNFmmUU3BvSrrdbdDMmLbrk/Z3LqlarCFrXklxTslu3ZeTO0QjZJdEc77NQVPGSa23TUV/DK6a8k7/AAOjI68enDr2KCgIKNsIhhQoAhAECEIQqqymFMRDJmVMmMjHcZMDImFMS4UwBXk9EtPHS7edtjimLXed+Op38ztdRNxaXGzt522OKUoOo432u16b2ZnpeVoyPD6aafN/mXnKo8CpYRqKS6G/y3M4rZL4/M5u8W6keuJoVmFld7XPHiO1EKbs02uqGyL5XKEzLGZUMJ2po1PvpPxNrSzGMuEk/UbFxv0xlJGrp4m5kWJXUus/l72wNnkVddUPHERfMqYzTZrsf7EvJnulNM8WJjdNdUZxXO8merEqSW8Z6ffZ/kdARRezGHl9qndK0Zyv5xul8WXlHTj04dezBQoUbZFBQAoIJCECiQhCiqoZMxphuZVkTCmY7jJgPcZMRMiYGTWlu+C3fkcppxi6q0rZN/I6XmMv2NS38E/6Wc1wytXlF8k2vel+Zjp04nitq3JbK+4ac5w3a+JZssy6FSCbXI9k+z9N9fec7XWKbDPq2rRTpOT8b8PTl6nllnOLqPTOmldXjpp6k3zU5ufc252fkXOlksqMnOnu3xTsbKjd7zpJvq4Rb99i859Op1fVc9q4OtCUdULOUVJLg7NX8n8PI2mR1qn1iTbLhicBGs4yqU2pQalCcdnFr5p9DFHL4faE4xS3u7cLvdmepPjUrf4Gk9F2jR59i5033XuXHDwShY0ma5ZGopt21W7rd7J9WTqJL5c/q5xU1b1XH0bS+DRtMqzSd1/5EJb8Hs2NiezGHqwcJz3tJXtd2l04cLcV47GGPY2nG7+0zm2kk5Xb2t7WqT1bJK3Q1zz43Trq7mLZTzBuP9rM9NDEOfHkVHAZdVozs23B8rNpeV+C9beXO2YSFlwshKljV5FhNFStN86k0v8Ac2/yN4jwZdBr6zxqTa8r2/I96O3Hp5+vYoKAQ2wIwowBIAJFQhCFFQuG4lw3MKdMNzHcbUUZFINzFqCpANXhrhKL+9Fx96aOeTjacfJr89/cdDUio53k9SFX6ynHVBtykk1eDd9Tt/Dxe3Az1GuOsWnszUvTSZZ4Ri0Ufs7XSSRb8PPmcq9EmvbGjHoPGhHoSlIyyZYtjxYppLZGsw37y56M3r6I7bt8EY8nvJKUtmzP0zwsuH9k88o3bM9NNIxVJWZevTMYJ5bCW9hFlsUbCD2Gch7PLzwoJbGPE7I9bkeHFTXPruJGawpJcP0+fxYSSd3sRHokyOPV26KGQqCisihhUQiGCAhVEhCAUu5NRjuDUYVluHUYdRNQGbUNqMGsmso9CkY8XL9nP+SX9LFUxMQ705rrGXyYFcyfFWdr+BfMBiU0vI5hhm73RZsqx0n6HCvTzV+p111DPElep4yVuDMs8RK3D3k1t5q+bwliZwnJK0Ul68/10GwOe06dRU5SW/B32KvnuTyqVHOLaduV1dFaeSVIT1Qumt79fMSFx36hjY6eXAxrExqPY51lcsZUp6NWl2snxa+B6MhyHFQq3liKjhe8rzm7+V3Ze4ttqTmf2vtOtpdrnpjO5q6seFnwMtOo7WZJR7ZyPDVldmSdU80JXuzfPmuXd8MiChUMdnAyChUFAMiICIEOQUYCEIQKomoGox6gORlWTUTUYtRNQGXURSMWomoDMpDpnnUhlICs5fFKo4v7smvc7Fjy2glOSXXgV/M4fVYnV92a1fi4SXyfqb7La95p35Lfr1OXUduKtkcK3T7q3NBis2dGTVWlUSvtJR1p/wCy9vUsuHxK0WNdmdPV3o+pmOs/1qqXaTBy43X8yS+ZscLicHU9rbx2t8Dw4Sppnpkl/LK2/lfZm8hl2FqRu6EPSEE+XNbmo65zjPR+zU3tUj5Kz2PXTrUpexOPvNXXynC27tOTa5aqll8TDQ7P0ZO7jLy11P8A6CXnnN1tMZwuuMenTmPKV0mCOV04K8I6Xzs3v59RZrYzfbkEZjQ4HnnL7q4s9ETtxPrh3TpjIxpjI6OR0FMUNwpkw3FCAQoAUwhiCEA57cDkI2Bsw0OoOoxtg1AZdQVI81XEQgrznGK/1NL5mmx3aqhT2heo/wDTZR/3Pj6AWNSMONzCnRg51JqKXvfglxbKLmnaurVio006a5tSvJ+F7KyNLhrzqx1tyvJXbbbfqwLfmGdfaYbUXGMWpQnKXeb4bQS4NePQ92R5itrvdGjxMuR46daUJXRyt/TtJjr+GxOqCaZ7qa1I5/kWcp2g/wBf4L1gMQtjONSs88ujPir/ADEp4CcHsnb19DbUJxZ64VYjG5Wvw+Fl95s90IKK2PSpJmGcki4mknM12JrKO7eyBmGOhTjdtFZxWf0adSm8TJxhOTUL+ypRt359I7ryvuJztxz66xY8NFvvy4vgukfHxPSmYYTTSaaafBp3TXgzIeiTHG3ayIKYiYyZUMmMhExkEMG4oQpkG4iGQBIAhBzDE4+lT9upGPg2r+7iafEdqqEfYjOfktK+P9ijv9cyXGCyYjtdUf7unGPjJuT/ACNLLMarlKeuSlJ3bTa9NuR5WSxcEnOUneTbfVu797BYKJYYEY1GemcZdJJ+5kaEaJRacTG8jyVaZsMDH6ynCXWKv5rZ/INbDnn9O8ainNwd07MuOT9oNlGT3Viq1aIIwa4F1cdawOeU5WvJJ/rkejEZxGO6krHJqdeatuzP9oqPa7+JFdWw+f07bzXvMWO7RU4r2lfkub/VzmdGjUm+LRYMry7e7V/Mbg2dN1K89dT2b3jHkul+pS/pFr6sRCC+5C/rOX9oo6RRpKKOSdrq2vG1nf2ZKC/DFJ/G5rjz0x36Lk2fYnByTo1GlzhK8oPzg+HmrM6FgfpIw0or66nUhK3e0qM43523u16HKeRIo9Dg75lGf4XFfuK0ZO13B3jJLq4yszapnzhRrShJShJxlF3UotxcX1TW5bsq+kHG00lUca0VymtMmv54/mmTFdjTCmU3KvpCwdWyqqdGX+taof748PVItuGxNOpFSpzjOL4OLUl70B6CChuEENwEuFNcgpAPmMIZINgECg2IUBrcawahEBjkhZIy2EtsSi19kpfWUpQ5wl/xluvjqNvUwpWuxuKVPFRhJ92otH43vD47fiOjzwB5+5nTvxdio1MF4CRwfgWmeA8DC8E1yObcaSGBT5Hto5fHobOnhuqPZSoLoFeHDYBdDd4PC2XAy4bCt8jaU8N4bFZtaXPcfDCYadaX3VaEf4pvaMff8EziM5ylqnJ3lJuTfVt3b97ZavpAzz7Vifqqb/Z0W0rcJVOE5ensr16lW5Ho/j5ya4dXaHIeK2BHgG50YJNWBTZJu4aS2YEU31+Rmw2Nq03enUnF9YycfkYn1Fpq7AtWS9rMXQqRnKrOcb96E5ykpQ52vwfRnXcozihi6anRqKXWP3ovpKPFHAb7Hpy7H1KNRTpzcJrhKLt6PqvBiwfQgUVjsl2qhjI6Klo1oq7jyml96H5rkWa5AxBbkCvmrTy6fIAaUrpP0f5GWaTRRhaJYZPkRACS2BFDtAiESwiW7MthH7XoFSKaaabTW6a2aa3TT6nb+zWNjjMLCrtqtpmlyqx2ltyT2kvCSOJlu+jzPlhMT9XVlalXcYyb4QqcIT8Fvpb6NP7pjvnY1x1ldQlgl0MUsD4G++rFdI8+O7Q/YPA9NDBJG1VJGSNOww1goYZIr30gZ2sFhHGDtVq3hDrFffn6J+9otFevClTlOpJRhCLlKT2Sildt+hwPtZnssdip1ndQXcpxf3aaeza5Slxfu5HTnnax11kaK1iONkFK7JUO7gEFsKZILYWaAxpD0eDClsClzARPu/AbDrfyTFhxkvUy0FZNgOuhhovvmeJ58P7TYGzw2JnTnGdOTjKLUoyXFNcztHZfPI4ygp7Kce7Uj0n1Xg+K/wAHEIM3/ZHOvsmJjJvuT7lTppb2l+F7+VxZo7Tchj+uh/HH3ohFfNlD73mvmZ3+ZCFGOftDRIQn0F8RUQhQyFnxRCCoZhn7L/lfyIQVY+lsJ+7h/JD+lGSQSHnr0AhmQhlVY+kb/wBZW/B/XA4XIhDt/G49pDiCZCHRzOuBjmQhQz4C0yEIEj7bM/IhBBI8DBhuMiEA9MB48SEKLeQhAP/Z",
+            "name": "Clement Mihailescu",
+            "status": "Co-Founder & CEO, AlgoExpert | Ex-Google & Ex-Facebook",
+            "followingStatus": false
+        },
+        {
+            "id": 2,
+            "photo": "data:image/png;base64,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",
+            "name": "GlobalLogic",
+            "status": "Company • Computer Software",
+            "followingStatus": false
+        },
+        {
+            "id": 3,
+            "photo": "https://media-exp1.licdn.com/dms/image/C560BAQH7G4ppO5H97A/company-logo_200_200/0/1557483616368?e=2159024400&v=beta&t=ue5J5IOXiVSwhGXTrfXH9Ucn1hXX2F0zaLDK3Yxk0Wo",
+            "name": "EPAM Systems",
+            "status": "Company • Information Technology and Services",
+            "followingStatus": false
+        }
+    ],
+    "viewedProfileUsers": [
+        {
+            "id": 1,
+            "photo": "https://memepedia.ru/wp-content/uploads/2020/03/soft-girl-6-768x662.png",
+            "name": "Alina Poliukhovych",
+            "status": ".NET Developer at TEMABIT Software",
+            "followingStatus": false
+        },
+        {
+            "id": 2,
+            "photo": "https://images.complex.com/complex/images/c_scale,f_auto,q_auto,w_1920/fl_lossy,pg_1/ok26lkxxcptihvwljzaw/girl-in-red?fimg-ssr-default",
+            "name": "Ksenya Torkova",
+            "status": "Senior HTML/CSS developer - RubyGarage",
+            "followingStatus": false
+        },
+        {
+            "id": 3,
+            "photo": "https://static.toiimg.com/photo/83890825/83890825.jpg?v=3",
+            "name": "Roman Alberda",
+            "status": "Full Stack Developer",
+            "followingStatus": false
+        }
+    ],
+    "networkPages": [
+        {
+            "id": 1,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png",
+            "name": "JavaScript Developer",
+            "followers": 205531,
+            "followStatus": false
+        },
+        {
+            "id": 2,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAtFBMVEUQFjD///8AACUAAAAAABj//v+7vcIMES0PGDiTl5uChY/w7/JtcHsAAAYAAB8AABuwsrsQFTIQFi4AACIABigQFiyipa1XW2oAAAwKES0AACAAABQAACcPFDLx9PUADCqGio8bIThgZXF2eYdQU2VlZ3ja29ofIj2Qk5zKzc85PEtDQ1X///ovNkza2t/m5OkoLEOsrrq/xMkqM0aWmaW0uLpESmI1OEtGSVerq68sNE2OkpUE76poAAAESklEQVR4nO3cf1eiShzH8YFRu0kCM4hJOLJpe6tdU+t2t9p9/s9rx1+I5eDhoOLX83ntX04cTu8FYRCMMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICSBJNy3+sMxb7XWIYU/BDsqrvWhO30nT3rO/1vp5Mo/7EOoVGrOix1gUIUorBy68K6VS/p1AutUdkNl0k8ycLSgVknWWg1u245np3+N51m4VXZeYjkJ74NUbiTbKGwCigsAoXVQGERKKwGCotAYTVQWAQKq4HCIlBYDRQWgcJqoJBFth0EN4Hd3r0uaoVCKdn2+O2gednpXA7v3NiNJBM59+ipFcrQa31v9NMfW/927uMklOZGWoVS9FoPmbyFxx+x3rKmddEqDOM7R4+NRtbirtnqvpLPzW9IOoVShII3P2+/JefW1m/GrduRUKFirY4hUG/LnwH5Qia8ofF+ok68jbYfbAgVJk+z19sT9egb+cKQjxebazQ/wEwaH/7LJF3MmZqONXQK7UFmi/lTHrtezKe+NT+sjmPjwZROYfdxcXKY7abXrcX5T0bd974eeebmZxnJFEZs+R7Umd89KedvOiGl3XOsIZcsNK2LTGGwPhW+8OyyiXhy89ZFptBrpDOY92Rz6Sh3XWQKubMq7PPNhfMuLBihQm+9k8Yqu6zMmXXPf06iULLoNh3peIXWRaUweUtHmjeF1kWlsH2XjgyLfXJDpvA6M1LoewU0CvXpcD1nu+oV+i4GlcL2+Rdm99KzLEze18fScyyUKvovHXl11c4VZBApFCxJR/zzPOOzVvpE+pif4V6qxeN0qGe8FtyGTKH7bK2u8ZuB3msX1/iMKdm22er1NmQK7at0yOEylMt5jZTB1UPm9VdkClk3HbJ8vjyahkp1dflL68K8LjqFtf9XQ3WrwYP5dX7icn82Mmmb5zl0CtX6jKh31Ne3Gufuj87quv+nZ7rBRqeQeR/p4OLGU/ZLW9bAI18oWM1ZB9U3ImcfM/5KqBduXOd/NaG/DTX7fePLduvtpyc6XdNniqQKmf3kfEmcv/7gxtk4rUKWdJ+tT9tRb8PJdWxeF7FCwWLhf9qI4yFvm6c01Aq1qNYafIyXD2T0Xy5/czv3epFeoVCq57a6vfvp9L7H4yCRLPezN3qFUkqh9LVEpO28acEoFiopM3/bRUq1o5FeYVEorAYKizjtQn3tULpQdDcLpdL/pPnZjeP8OalV4ahuDWp2OTefvo8/m/7YQRCYlg+C/OcC9luoPf65LOehs1moT6FB3jofXt+OkHjQv08jMnd5tnrOfXrl9AsF21VY8EEBFKLwTAvVAQrrq8KdR5rOEY40kfj6idMeLOc0+YV1q3OEqY9iB+jThbPdT+7cS49xtlDBsHkAT7NTecgumJ/rLtn5C+5ByanadulcxXW9HEcJBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHP3F145arEIpEgAAAAAAElFTkSuQmCC",
+            "name": "Codecademy",
+            "followers": 863234,
+            "followStatus": false
+        },
+        {
+            "id": 3,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://www.accenture.com/t20200701T040724Z__w__/us-en/_acnmedia/Accenture/Redesign-Assets/DotCom/Images/Global/Hero/12/Accenture-Logo-768x768.jpg",
+            "name": "Accenture",
+            "followers": 23635,
+            "followStatus": false
+        },
+        {
+            "id": 4,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://yt3.ggpht.com/ytc/AKedOLQWB_fHwSUdJYXuRls9scEQgxsWGEHn_2Ts5Wex=s900-c-k-c0x00ffffff-no-rj",
+            "name": "Bobocode",
+            "followers": 977544,
+            "followStatus": false
+        },
+        {
+            "id": 5,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://s.dou.ua/CACHE/images/img/static/companies/avatar_2wodIRR/c3bd5cf307810b39d33b26c1f4c18ae7.jpg",
+            "name": "DataRobot",
+            "followers": 236342,
+            "followStatus": false
+        },
+        {
+            "id": 6,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://media-exp1.licdn.com/dms/image/C4D0BAQHMgChE6Dqr8w/company-logo_200_200/0/1576952473753?e=2159024400&v=beta&t=QXXWTaam5uRVOlIOKezXYBzcWj5SGn0HKMK7Lw5JlEA",
+            "name": "Stanley X | DeepHow",
+            "followers": 437896,
+            "followStatus": false
+        },
+        {
+            "id": 7,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://seekvectorlogo.com/wp-content/uploads/2017/12/oracle-vector-logo-small.png",
+            "name": "Oracle",
+            "followers": 123456,
+            "followStatus": false
+        },
+        {
+            "id": 8,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "data:image/png;base64,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",
+            "name": "GeeksforGeeks",
+            "followers": 86453,
+            "followStatus": false
+        }
+    ],
+    "networkUsers": [
+        {
+            "id": 1,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+            "name": "Oleg Matsevich",
+            "status": "Frontend Developer",
+            "connections": 234234,
+            "connectStatus": false
+        },
+        {
+            "id": 2,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://www.mantruckandbus.com/fileadmin/media/bilder/02_19/219_05_busbusiness_interviewHeader_1485x1254.jpg",
+            "name": "Vitalii Panchyshak",
+            "status": "JS developer",
+            "connections": 75422,
+            "connectStatus": false
+        },
+        {
+            "id": 3,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://www.rubendevries.nl/wp-content/uploads/2019/11/Knapste-man-van-Rotterdam-1024x1024.jpg",
+            "name": "Victor Shmatko",
+            "status": "Lead Frontend Developer",
+            "connections": 86521,
+            "connectStatus": false
+        },
+        {
+            "id": 4,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://ya-izvesten.ru/wp-content/uploads/2020/09/GT-yF8d8MYE.jpg",
+            "name": "Roksolana Laba",
+            "status": "Finance Team Lead",
+            "connections": 12435,
+            "connectStatus": false
+        },
+        {
+            "id": 5,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://www.fondsenwerving.nl/l/library/download/urn:uuid:b920d9dc-cb14-4e58-8107-8f61ab5aef00/ramses+man.jpg?scaleType=6&width=1520&height=940",
+            "name": "Andrzej Michalski",
+            "status": "UX/UI Designer junior",
+            "connections": 3457,
+            "connectStatus": false
+        },
+        {
+            "id": 6,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://deadline.com/wp-content/uploads/2020/09/Gugu-Mbatha-Raw-e1610021013129.jpg",
+            "name": "Adriana Pohaida",
+            "status": "Junior QA Manual Engineer",
+            "connections": 8653,
+            "connectStatus": false
+        },
+        {
+            "id": 7,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://news.berkeley.edu/wp-content/uploads/2020/03/Maryam-Karimi-01-750.jpg",
+            "name": "Oleksandra Triska",
+            "status": "Junior QA Test Engineer",
+            "connections": 78453,
+            "connectStatus": false
+        },
+        {
+            "id": 8,
+            "backgroundPhoto": "https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg",
+            "photo": "https://www.ttm.nl/wp-content/uploads/2017/03/klinge.jpg",
+            "name": "Volodymyr Semenov",
+            "status": "Frontend Developer",
+            "connections": 1235,
+            "connectStatus": false
+        }
+    ],
+    "notifications": [
+        {
+            "id": 1,
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAuKQBcgfx4v5pffq8UAB7RIN87qhVO4VOhQ&usqp=CAU",
+            "text": "Do you have the back-to-work jitters? These tips may help you get reacquainted with your colleagues."
+        },
+        {
+            "id": 2,
+            "photo": "https://cdn-icons-png.flaticon.com/512/476/476863.png",
+            "text": "2 people viewed your profile"
+        },
+        {
+            "id": 3,
+            "photo": "https://cdn-icons-png.flaticon.com/512/2666/2666505.png",
+            "text": "DAILY RUNDOWN: MONDAY Shipping needs drop dead date; Has tech left the building for good?; and other top news for you"
+        },
+        {
+            "id": 4,
+            "photo": "https://cdn-icons-png.flaticon.com/512/2666/2666505.png",
+            "text": "Does a part-time job develop or distract students? Join the debate."
+        },
+        {
+            "id": 5,
+            "photo": "https://cdn-icons-png.flaticon.com/512/2666/2666505.png",
+            "text": "Why it's vital to include short breaks during the working day."
+        },
+        {
+            "id": 6,
+            "photo": "https://cdn-icons-png.flaticon.com/512/2666/2666505.png",
+            "text": "Writing down your long-term plan is the first step to making it a reality. This author explains why."
+        },
+        {
+            "id": 7,
+            "photo": "https://cdn-icons-png.flaticon.com/512/2666/2666505.png",
+            "text": "DAILY RUNDOWN: SATURDAY Workers want purpose, not perks; Career ladders are so passé; and other top news for you"
+        }
+    ],
+    "recommendedJobs": [
+        {
+            "id": 1,
+            "jobLogo": "data:image/png;base64,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",
+            "jobName": "React Developer",
+            "companyName": "elopage GmbH",
+            "cityAndCountry": "Lviv, Ukraine",
+            "activelyRecruitingStatus": true,
+            "applicants": 1,
+            "saveStatus": false
+        },
+        {
+            "id": 2,
+            "jobLogo": "https://upload.wikimedia.org/wikipedia/ru/5/54/Wix.com_Logo.png",
+            "jobName": "Fullstack JavaScript Engineer",
+            "companyName": "Wix.com",
+            "cityAndCountry": "Lviv, Ukraine",
+            "activelyRecruitingStatus": true,
+            "applicants": 1,
+            "saveStatus": false
+        },
+        {
+            "id": 3,
+            "jobLogo": "https://media-exp1.licdn.com/dms/image/C560BAQH7G4ppO5H97A/company-logo_200_200/0/1557483616368?e=2159024400&v=beta&t=ue5J5IOXiVSwhGXTrfXH9Ucn1hXX2F0zaLDK3Yxk0Wo",
+            "jobName": "Middle/Senior React Native Developer",
+            "companyName": "EPAM Systems",
+            "cityAndCountry": "Lviv, Ukraine",
+            "activelyRecruitingStatus": true,
+            "applicants": 1,
+            "saveStatus": false
+        },
+        {
+            "id": 4,
+            "jobLogo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/954/6/logo/2cd73e86cf92491242692a7c16cb8317.png",
+            "jobName": "Full-stack Engineer",
+            "companyName": "Toptal",
+            "cityAndCountry": "Lviv, Ukraine",
+            "activelyRecruitingStatus": true,
+            "applicants": 0,
+            "saveStatus": false
+        },
+        {
+            "id": 5,
+            "jobLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxUblc--yhDfK_KW1Z4FM4vwx8FYH2jYeTKg&usqp=CAU",
+            "jobName": "Junior React Developer",
+            "companyName": "Windmill",
+            "cityAndCountry": "Mykolaiv, Lviv, Ukraine",
+            "activelyRecruitingStatus": false,
+            "applicants": 6,
+            "saveStatus": false
+        },
+        {
+            "id": 6,
+            "jobLogo": "data:image/png;base64,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",
+            "jobName": "Junior Developer - Web UI IRC128719",
+            "companyName": "GlobalLogic",
+            "cityAndCountry": "Mykolaiv, Lviv, Ukraine",
+            "activelyRecruitingStatus": true,
+            "applicants": 3,
+            "saveStatus": false
+        }
+    ],
+    "dialogUsers": [
+        {
+            "id": 1,
+            "photo": "https://ichef.bbci.co.uk/news/976/cpsprodpb/FD27/production/_101970846_aubreyblanche.jpg",
+            "name": "Diane from LinkedIn Premium",
+            "status": "Frontend Developer",
+            "messages": [
+                {
+                    "id": 1,
+                    "message": "Hello",
+                    "photo": "https://ichef.bbci.co.uk/news/976/cpsprodpb/FD27/production/_101970846_aubreyblanche.jpg",
+                    "name": "Diane from LinkedIn Premium"
+                },
+                {
+                    "id": 2,
+                    "message": "I'd like to offer you a free trial of LinkedIn Premium.",
+                    "photo": "https://ichef.bbci.co.uk/news/976/cpsprodpb/FD27/production/_101970846_aubreyblanche.jpg",
+                    "name": "Diane from LinkedIn Premium"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKX9ClIfHI7kdTOFYmEgKuEQ9GdyjjORLm2Q&usqp=CAU",
+            "name": "Victoria Patsulya",
+            "status": "IT Recruiter",
+            "messages": [
+                {
+                    "id": 1,
+                    "message": "Hello",
+                    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKX9ClIfHI7kdTOFYmEgKuEQ9GdyjjORLm2Q&usqp=CAU",
+                    "name": "Victoria Patsulya"
+                },
+                {
+                    "id": 2,
+                    "message": "How are you",
+                    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKX9ClIfHI7kdTOFYmEgKuEQ9GdyjjORLm2Q&usqp=CAU",
+                    "name": "Victoria Patsulya"
+                },
+                {
+                    "id": 3,
+                    "message": "?",
+                    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKX9ClIfHI7kdTOFYmEgKuEQ9GdyjjORLm2Q&usqp=CAU",
+                    "name": "Victoria Patsulya"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "photo": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2017/03/28/Local-Politics/Images/Supreme_Court_Gorsuch_Moments_22084-70c71-0668.jpg?t=20170517",
+            "name": "Oleh Matsevych",
+            "status": "Full-stack Developer",
+            "messages": [
+                {
+                    "id": 1,
+                    "message": "Bruh",
+                    "photo": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2017/03/28/Local-Politics/Images/Supreme_Court_Gorsuch_Moments_22084-70c71-0668.jpg?t=20170517",
+                    "name": "Oleh Matsevych"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "photo": "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1112624532.1639094400",
+            "name": "Pavlo Voloshyn",
+            "status": "Full-stack Developer",
+            "messages": [
+                {
+                    "id": 1,
+                    "message": "I love London",
+                    "photo": "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1112624532.1639094400",
+                    "name": "Pavlo Voloshyn"
+                }
+            ]
+        }
+    ]
 }
